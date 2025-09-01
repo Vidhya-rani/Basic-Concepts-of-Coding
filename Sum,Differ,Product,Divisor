@@ -1,0 +1,10 @@
+class Main {
+    public static void main(String[] args) {
+        int a=12;
+        int b=6;
+        System.out.println("sum of the number" + (a+b));
+        System.out.println("differ of an number" + (a-b));
+        System.out.println("product of the number" + (a*b));
+        System.out.println("division of the number" + ((double)a/b));
+    }
+}
