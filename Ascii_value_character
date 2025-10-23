@@ -1,0 +1,10 @@
+import java.util.*;
+public class Ascii_value_character {
+    public static void main(String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the character:");
+    char ch=sc.next().charAt(0);// taking input from user and start at 0
+    int ascii=(int)ch;// converting char to int
+    System.out.println("Ascii value of '" +ch+ "' is :" + ascii);
+}
+}
