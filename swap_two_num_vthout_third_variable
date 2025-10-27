@@ -1,0 +1,15 @@
+import java.util.*;
+public class swap_two_num_vthout_third_variable {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Before swapping num:");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+          a=a+b;
+          b=a-b;
+          b=a-b;
+        System.out.println("After swapping num:");
+          System.out.println(a);
+          System.out.println(b);
+    }
+}
