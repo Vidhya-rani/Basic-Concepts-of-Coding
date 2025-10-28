@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Month_Corresponding_Month {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the month from (1-12):");
+        int monthNumber=sc.nextInt();
+        if(monthNumber==1){
+            System.out.println("January");
+            System.out.println("31 days");
+        }
+       else if(monthNumber==2){
+            System.out.println("February");
+            System.out.println("28 days with out leap year 29 days with leap year");
+        }
+         else if(monthNumber==3){
+            System.out.println("March");
+            System.out.println("31 days");
+        }
+         else if(monthNumber==4){
+            System.out.println("April");
+            System.out.println("30 days");
+        }
+       else if(monthNumber==5){
+            System.out.println("May");
+            System.out.println("31 days");
+        }
+       else if(monthNumber==6){
+            System.out.println("June");
+            System.out.println("30 days");
+        }
+      else if(monthNumber==7){
+            System.out.println("July");
+            System.out.println("31 days");
+        }
+       else if(monthNumber==8){
+            System.out.println("August");
+            System.out.println("31 days");
+        }
+       else if(monthNumber==9){
+            System.out.println("September");
+            System.out.println("30 days");
+        }
+       else if(monthNumber==10){
+            System.out.println("October");
+            System.out.println("31 days");
+        }
+       else if(monthNumber==11){
+            System.out.println("November");
+            System.out.println("30 days");
+        }
+        else if(monthNumber==12){
+            System.out.println("December has 31 days in a month");
+            System.out.println("31 days");
+        }
+        else{
+            System.out.println("Invalid month");
+        }
+    }
+}
