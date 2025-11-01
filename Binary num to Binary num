@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Binary_Binary_Number {
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter 1st binary number:");
+        String binary1=sc.next();
+        System.out.println("Enter 2nd binary number:");
+        String binary2=sc.next();
+        // convert binary to decimal
+        int n1=Integer.parseInt(binary1,2);
+        int n2=Integer.parseInt(binary2,2);
+        // addition
+        int sum=n1+n2;
+        // convert to binary
+        String binaryNumber=Integer.toBinaryString(sum);
+        System.out.println("The binary number of two numbers is: " + binaryNumber);
+
+    }
+}
