@@ -1,0 +1,20 @@
+import java.util.*;
+public class Salutation_According_To_Time {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the hour from 24 hours timing (0-23) of the day:");
+        int hour=sc.nextInt();
+        if(hour>=0 && hour<12){
+            System.out.println("Good morning!");
+        }
+            if(hour>=12 && hour<16){
+                System.out.println("Good afternoon!");
+            }
+            else if(hour>=16 && hour<21){
+                System.out.println("Good evening!");
+            }
+            else if(hour>=21 && hour<=23){
+                System.out.println("Good night!");
+            }
+        }
+    }
