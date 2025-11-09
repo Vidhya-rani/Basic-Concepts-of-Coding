@@ -62,3 +62,43 @@ public class Calculator {
     }
 }
 
+
+
+Method 3 using an  if-else statement 
+
+import java.util.Scanner;
+
+public class Calculator {
+
+    static int add(int x, int y) { return x + y; }
+    static int sub(int x, int y) { return x - y; }
+    static int mul(int x, int y) { return x * y; }
+    static int div(int x, int y) { return x / y; }
+    static int mod(int x, int y) { return x % y; }
+
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println("Choose operator: +, -, *, /, %");
+        char ch = sc.next().charAt(0);
+
+        if (ch == '+') 
+            System.out.println(add(a, b));
+        else if (ch == '-') 
+            System.out.println(sub(a, b));
+        else if (ch == '*') 
+            System.out.println(mul(a, b));
+        else if (ch == '/') 
+            System.out.println(div(a, b));
+        else if (ch == '%') 
+            System.out.println(mod(a, b));
+        else 
+            System.out.println("invalid");
+    }
+}
+
