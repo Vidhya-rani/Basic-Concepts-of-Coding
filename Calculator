@@ -33,3 +33,32 @@ public class Calculator {
         }
 
     }
+ Method 2: Using the ternary operator
+
+
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        System.out.println("Choose operator: +, -, *, /, %");
+
+        char ch = sc.next().charAt(0);
+
+        int result = (ch == '+') ? (a + b) :
+                     (ch == '-') ? (a - b) :
+                     (ch == '*') ? (a * b) :
+                     (ch == '/') ? (a / b) :
+                     (ch == '%') ? (a % b) :
+                     0;
+
+        System.out.println("Result: " + result);
+    }
+}
+
