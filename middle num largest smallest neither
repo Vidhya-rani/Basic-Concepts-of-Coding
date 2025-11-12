@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Middle_num_largest_smallest_neither {
+    public static void main (String args[]){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the number:");
+        int n=sc.nextInt();  
+        int first=n/100;
+        int middle=(n/10)%10;
+        int third=n%10;
+        if(middle > first && middle > third){
+            System.out.println(middle+ " is largest num");
+        }
+        else if(middle < first && middle < third){
+            System.out.println(middle + " is smallest num");
+        }
+        else{
+            System.out.println(middle + " neither largest nor smallest");
+        }
+    }
+}
