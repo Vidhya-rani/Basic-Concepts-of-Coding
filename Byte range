@@ -1,0 +1,14 @@
+public class DatatypeRangeExample {
+  public static void main(String[] args) {
+    for(byte b = 0; b < 180; b++) {
+      System.out.println(b);
+
+      if(b < 0) {
+        System.out.println("welcome to java");
+        //System.exit(0);
+        break;
+      }
+    }
+    System.out.println("Hello!!");
+  }
+}
