@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Amstrong2 {
+   public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.println("Enter the number");
+       int n=sc.nextInt();
+       String s=Integer.toString(n);
+       int length=s.length();
+       int sum=0;
+       int count=1;
+       int temp=n;
+       while(count<=length){
+           int digit=temp%10;
+           temp=temp/10;
+           sum=sum+Math.powExact(digit,length);
+           count++;
+       }
+       System.out.println("sum of the num:"+sum);
+       if(sum==n){
+           System.out.println("Amstrong");
+       }
+       else{
+           System.out.println("not Amstrong");
+       }
+
+    }
+}
