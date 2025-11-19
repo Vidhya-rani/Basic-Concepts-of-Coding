@@ -1,0 +1,30 @@
+import java.util.*;
+public class Palindrome_Str_num {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the String or number:");
+        String input = sc.nextLine();
+        String letters = "";
+        String digits = "";
+        for (char ch : input.toCharArray()) {
+            if (Character.isDigit(ch)) {
+                digits = digits + ch;
+            } else if (Character.isLetter(ch)) {
+                letters = letters + ch;
+            }
+        }
+            String digitrev = new StringBuilder(digits).reverse().toString();
+            String letterrev = new StringBuilder(letters).reverse().toString();
+
+            boolean digitpalindrome=digits.equals(digitrev);
+            boolean letterpalindrome=letters.equals(letterrev);
+
+            if(digitpalindrome && letterpalindrome){
+                System.out.println("palindrome");
+            }
+            else{
+                System.out.println(" not palindrome");
+            }
+
+    }
+}
