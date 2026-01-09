@@ -1,0 +1,19 @@
+public class SortedArray {
+    public static void main(String[] args) {
+        int a[]={2,5,6,9,10};
+        boolean isSorted=true;
+        for(int i=1;i<a.length;i++){
+            if(a[i]<a[i-1]){
+                isSorted = false;
+                break;
+            }
+        }
+        if(isSorted){
+            System.out.println("Array is sorted in Ascending order");
+        }
+        else{
+            System.out.println("Not sorted");
+        }
+    }
+    
+}
