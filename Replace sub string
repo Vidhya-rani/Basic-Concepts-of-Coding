@@ -1,0 +1,10 @@
+public class ReplaceSubString {
+    public static void main(String[] args) {
+        String str="I am a Software developer";
+        String str1=str.replaceAll("developer","programmer");
+        System.out.println("Given string is:"+" "+str);
+        System.out.println("New string is:"+" "+str1);
+
+        }
+    
+}
