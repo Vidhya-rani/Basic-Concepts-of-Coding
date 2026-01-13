@@ -1,0 +1,26 @@
+public class ReverseEachWordStr {
+    public static void main(String[] args) {
+
+        String input = "java program";
+        String output = "";
+
+        String[] words = input.split(" ");
+
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            String rev = "";
+
+            for (int j = word.length() - 1; j >= 0; j--) {
+                rev = rev + word.charAt(j);
+            }
+
+            output = output + rev;
+
+            if (i < words.length - 1) {
+                output = output + " ";
+            }
+        }
+
+        System.out.println(output);
+    }
+}
